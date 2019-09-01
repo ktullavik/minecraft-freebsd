@@ -16,13 +16,13 @@ GIT_OPTIONS="--single-branch --depth 1"
 #GIT_OPTIONS=""
 
 # lwjgl3 dependency
-git clone -b 1.18.2 git@github.com:johalun/openal-soft.git
+git clone -b 1.18.2 https://github.com/ktullavik/openal-soft
 
 # lwjgl3 dependency
-git clone -b 'freebsd' ${GIT_OPTIONS} git@github.com:johalun/glfw.git
+git clone -b 'freebsd' ${GIT_OPTIONS} https://github.com/ktullavik/glfw.git
 
 # main repo
-git clone -b 'freebsd-3.2.1' ${GIT_OPTIONS} git@github.com:johalun/lwjgl3.git
+git clone -b 'freebsd-3.2.1' ${GIT_OPTIONS} https://github.com/ktullavik/lwjgl3.git
 
 cd openal-soft
 rm -fr build
