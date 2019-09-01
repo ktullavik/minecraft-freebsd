@@ -53,9 +53,14 @@ echo Building lwjgl3
 echo ===============
 echo
 
+export JAVA_HOME=/usr/local/openjdk12
+export JAVA8_HOME=/usr/local/openjdk8
 cd ${ROOT}/lwjgl3
 ant -Dos.name=Linux -Dplatform=linux || exit 1
 ant -Dos.name=Linux -Dplatform=linux release || exit 1
+unset JAVA8_HOME
+unset JAVA_HOME
+
 
 echo
 echo "Build done. Make ROOT in minecraft-runtime-1.13 point to this folder and execute minecraft-client-1.13."
