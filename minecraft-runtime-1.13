@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROOT=/home/johannes/dev/lwjgl3-port
+ROOT=/home/kt/dev/minecraft-freebsd
 
 LWJGL_JLP_OVRD="${ROOT}/native-libs:${ROOT}/lwjgl3/bin/libs:/usr/local/lib:/usr/lib"
 
